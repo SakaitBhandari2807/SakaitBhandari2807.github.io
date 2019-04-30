@@ -1,12 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <head>
-        <title>blogs</title>
-    </head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
     <body>
         <div>
             <h2>
-                Teradata
+                Whenever you face data types error,just check the mapping sheet of data types.
             </h2>
+            <p>
+                while working with sqoop export from hadoop system to Teradata.We faced an data types error.For example we had a table in teradata with one of the column having a data type as Decimal(18,0) and same data types in hive.
+                So while exporting this data we faced the data type mismatch error.So we checked the mapping sheet and found that teradata decimal was compatible with string.so we changed the data types to string and it worked...
+            </p>
         </div>
     </body>
-</head>
+</html>
