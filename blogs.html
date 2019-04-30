@@ -19,5 +19,16 @@
                 So while exporting this data we faced the data type mismatch error.So we checked the mapping sheet and found that teradata decimal was compatible with string.so we changed the data types to string and it worked...
             </p>
         </div>
+        <div>
+                <h2>
+                    Coverting timestamp in hive to timestamp(0) in teradata. 
+                </h2>
+                <p>
+                    Since,Teradata stores a timestamp(0) value as yyyy-MM-dd HH:MI:ss and hive generates the timestamp as yyyy-MM-dd HH:MM:ss.SSSSSS 
+                    So to accomodate it correctly into teradata use this function in hive :substr() 
+                    Example: select substr(current_timestamp,0,19) would produce the results as yyyy-MM-dd HH:MI:ss.
+                </p>
+            </div>
+
     </body>
 </html>
